@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap');
+
+:root {
+    /* --- Primary Colors --- */
+    --primary-red: hsl(0, 78%, 62%);
+    --primary-cyan: hsl(180, 62%, 55%);
+    --primary-orange: hsl(34, 97%, 64%);
+    --primary-blue: hsl(212, 86%, 64%);
+
+    /* --- Neutral Colors --- */
+    --neutral-dark-blue: hsl(234, 12%, 34%);
+    --neutral-grayish-blue: hsl(229, 6%, 66%);
+    --neutral-very-light-gray: hsl(0, 0%, 98%);
+
+    /* --- Fonts --- */
+
+    --ff: 'Poppins', sans-serif;
+
+    --fw-1: 200;
+    --fw-r: 400;
+    --fw-b: 600;
+
+    --fs-s: .8rem;
+    --fs-m: .9rem;
+    --fs-l: 1.5rem;
+}
+
+*, 
+::before, 
+::after {
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+.body {
+    background:var(--neutral-very-light-gray);
+    font-family:var(--ff);
+    font-size:var(--fs-m);
+    color:var(--neutral-dark-blue);
+    margin:3rem 2.5rem;
+}
+
+.header {
+    display:flex;
+    flex-direction:column;
+    margin-bottom:2.5rem;
+}
+
+.header__title {
+    font-size:var(--fs-l)
+}
+
+.header__title--lightfont {
+
+    font-weight:var(--fw-1);
+}
+
+.header__title--boldfont {
+    margin-bottom:1rem;
+    font-weight:var(--fw-b);
+}
+
+.header__paragraph {
+    text-align:center;
+}
+
+.main {
+    display:grid;
+    /* grid-template-columns:1fr;
+    grid-template-rows:1fr; */
+    row-gap:2rem;
+}
+
+.main__grid {
+    position:relative;
+    font-size:var(--fs-s);
+    height:14rem;
+    padding:1.5rem;
+    line-height:1.4rem;
+    border-radius:1rem;
+    box-shadow: 0 1rem 2rem hsl(225, 10%, 77%);
+    overflow:hidden;
+}
+
+.main__grid--supervisor::before {
+    content:"";
+    width:100%;
+    height:.3rem;
+    position:absolute;
+    top:0;
+    left:0;
+    background:var(--primary-cyan);
+
+}
+
+.main__grid--team-builder::before {
+    content:"";
+    width:100%;
+    height:.3rem;
+    position:absolute;
+    top:0;
+    left:0;
+    background:var(--primary-red);
+
+}
+
+.main__grid--karma::before {
+    content:"";
+    width:100%;
+    height:.3rem;
+    position:absolute;
+    top:0;
+    left:0;
+    background:var(--primary-orange);
+}
+
+.main__grid--calculator::before {
+    content:"";
+    width:100%;
+    height:.3rem;
+    position:absolute;
+    top:0;
+    left:0;
+    background:var(--primary-blue);
+}
+
+.main__grid--title {
+    margin-bottom:.4rem;
+}
+
+.main__div {
+    display:flex;
+    position:relative;
+    justify-content: flex-end;
+    margin: 2rem 0;
+}
+
+.footer {
+    margin: 3rem 0;
+    text-align:center;
+}
+
+.footer__link {
+    text-decoration:none;
+}
+
+.footer__link:link {
+    color:cadetblue
+}
+
+.footer__link:visited {
+    color: darkmagenta;
+}
