@@ -20,7 +20,7 @@
     --fw-r: 400;
     --fw-b: 600;
 
-    --fs-s: .8rem;
+    --fs-s: .7rem;
     --fs-m: .9rem;
     --fs-l: 1.5rem;
 }
@@ -44,7 +44,9 @@
 .header {
     display:flex;
     flex-direction:column;
-    margin-bottom:2.5rem;
+    max-width:100vw;
+    margin:4rem 0;
+    text-align:center;
 }
 
 .header__title {
@@ -62,7 +64,7 @@
 }
 
 .header__paragraph {
-    text-align:center;
+    color:var(--neutral-grayish-blue);
 }
 
 .main {
